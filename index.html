@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">最新动态</h1>
   <ul class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in paginator.posts %} <!-- limit:3 -->
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -23,6 +23,6 @@ layout: default
 </div>
 {% if paginator.total_pages > 1 %}<!-- Pagination links -->
   <div class="pagination">
-    {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev">Newer Posts</a> {% endif %}
-    {% if paginator.next_page %} <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Older Posts</a>{% endif %}
+    {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev">上一页</a> {% endif %}
+    {% if paginator.next_page %} <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">下一页</a>{% endif %}
   </div>{% endif %}
