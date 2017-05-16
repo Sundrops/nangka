@@ -1,7 +1,7 @@
-# official website of CIG-BVD(中国图象图形学学会-视觉大数据专委会官网)
+# official website of CSIG-BVD(CSIG-视觉大数据专委会官网)
 
--_pages contains tabs of menu
--_posts contains all news. you can post latest news here.
+- _pages contains some tabs
+- _posts contains all news. you can post latest news here.
 
 
 ### Run this theme on your local machine
