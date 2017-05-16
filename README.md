@@ -1,24 +1,14 @@
-# Nangka - theme for jekyll
-Just simple theme for your jekyll blog, based on default Jekyll theme.
+# official website of CIG-BVD(中国图象图形学学会-视觉大数据专委会官网)
 
-### Feature
+-_pages contains tabs of menu
+-_posts contains all news. you can post latest news here.
 
-- [x] **Google Analytics**
-- [x] **Jekyll Search on Archive Page**
-- [x] **Pagination**
-- [x] **404 Error Page**
-- [x] **SEO** Gems: *[jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap), [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag), [jekyll-feed](https://github.com/jekyll/jekyll-feed)*
-- [x] **Disqus Comments**
-- [x] **Ads**
-- [x] **Share Button**
-
-### [View Demo](http://rmsubekti.github.io/nangka)
 
 ### Run this theme on your local machine
 To serve this jekyll theme make sure your computer meets the [following requirements](https://jekyllrb.com/docs/installation/#requirements), then run this command.
 
 ```
-git clone git@github.com:rmsubekti/nangka.git
+git clone https://github.com/Sundrops/sundrops.github.io.git
 cd nangka
 bundle install
 bundle exec jekyll s
