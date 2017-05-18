@@ -4,6 +4,9 @@ layout: default
 
 <div class="home">
 <p><br></p>
+  <a class="post-link" href="/peoples/"><h2>专委会简介</h2></a>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国图象图形学学会视觉大数据专业委员会(CSIG-BVD)旨在团结和组织视觉大数据相关领域的科研人员、企业技术专家等，通过学术交流，技术研讨等活动，分享科研心得、畅谈学术热点、分析战略动态等，并最终提高视觉大数据领域在国家和国际学术的影响力，促进学科发展和产学研转化.</p>
+<p><br></p>
   <h2>最新动态</h2>
   <ul class="post-list">
     {% for post in paginator.posts %} <!-- limit:3 -->
@@ -13,7 +16,9 @@ layout: default
         </h2>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <p class="description">
+        <img align="left" src="{{ post.thum }}" alt="" width="200" height="150" hspace="20px">
             {% if post.description %}
+
                 {{ post.description | strip_html | strip_newlines | truncate: 250 }}
             {% else %}
                 {{ post.content | strip_html | strip_newlines | truncate: 250 }}
@@ -27,3 +32,4 @@ layout: default
     {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev">上一页</a> {% endif %}
     {% if paginator.next_page %} <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">下一页</a>{% endif %}
   </div>{% endif %}
+<p><br/> <br/></p>
