@@ -19,9 +19,9 @@ layout: default
         <img align="left" src="{{ post.thum }}" alt="" width="200" height="150" hspace="20px">
             {% if post.description %}
 
-                {{ post.description | strip_html | strip_newlines | truncate: 250 }}
+                {{ post.description | strip_html | strip_newlines | truncate: 500 }}
             {% else %}
-                {{ post.content | strip_html | strip_newlines | truncate: 250 }}
+                {{ post.content | strip_html | strip_newlines | truncate: 500 }}
             {% endif %}</p>
       </li>
     {% endfor %}
