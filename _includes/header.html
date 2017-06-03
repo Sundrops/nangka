@@ -13,11 +13,9 @@
         <nav class="site-nav">
             <div class="trigger">
             <a class="page-link" href="/">首页</a>
-            {% for page in site.pages %}
-                {% if page.title and page.url != '/404.html' %}
-                        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                {% endif %}
-            {% endfor %}
+            <a class="page-link" href="/news">新闻</a>
+            <a class="page-link" href="/peoples">组织结构</a>
+            <a class="page-link" href="/about">关于我们</a>
             </div>
         </nav>
     </div>

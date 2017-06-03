@@ -3,33 +3,58 @@ layout: default
 ---
 
 <div class="home">
-<p><br></p>
+  <p><br></p>
   <a class="post-link" href="/peoples/"><h2>专委会简介</h2></a>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国图象图形学学会视觉大数据专业委员会(CSIG-BVD)旨在团结和组织视觉大数据相关领域的科研人员、企业技术专家等，通过学术交流，技术研讨等活动，分享科研心得、畅谈学术热点、分析战略动态等，并最终提高视觉大数据领域在国家和国际学术的影响力，促进学科发展和产学研转化.</p>
-<p><br></p>
-  <h2>最新动态</h2>
-  <ul class="post-list">
-    {% for post in paginator.posts %} <!-- limit:3 -->
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <p class="description">
-        <img align="left" src="{{ post.thum }}" alt="" width="200" height="150" hspace="20px">
-            {% if post.description %}
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国图象图形学学会视觉大数据专业委员会(CSIG-BVD)旨在团结和组织视觉大数据相关领域的科研人员、企业技术专家等，通过学术交流，技术研讨等活动，分享科研心得、畅谈学术热点、分析战略动态等，并最终提高视觉大数据领域在国家和国际学术的影响力，促进学科发展和产学研转化.</p>
 
-                {{ post.description | strip_html | strip_newlines | truncate: 500 }}
-            {% else %}
-                {{ post.content | strip_html | strip_newlines | truncate: 500 }}
-            {% endif %}</p>
-      </li>
+  <a class="post-link" href="/news/"><h2>最新动态</h2></a>
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+    {% assign flag = true %}
+    {% for post in site.posts limit:3%}
+      {% if flag == false %}
+      
+        <div class="item">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <img src="{{ post.thum }}" width="1000px" > <!-- height:auto -->
+            <div class="carousel-caption">
+              <h3>{{ post.title }}</h3>
+            </div>
+          </a>
+        </div>
+        
+      {% endif %}
+      {% if flag == true %}
+        {% assign flag = false %}
+        <div class="item active">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <img src="{{ post.thum }}" width="1000px" >
+            <div class="carousel-caption">
+              <h3>{{ post.title }}</h3>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+
     {% endfor %}
-  </ul>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
 </div>
-{% if paginator.total_pages > 1 %}<!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev">上一页</a> {% endif %}
-    {% if paginator.next_page %} <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">下一页</a>{% endif %}
-  </div>{% endif %}
 <p><br/> <br/></p>
