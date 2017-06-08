@@ -14,7 +14,7 @@ title: 新闻
         </h2>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <p class="description">
-        <img align="left" src="{{ post.thum }}" alt="" width="200" height="150" hspace="20px">
+        <img align="left" src="{{ post.thum }}" alt="" width="200" height="150" style="margin-right: 20px">
             {% if post.description %}
 
                 {{ post.description | strip_html | strip_newlines | truncate: 500 }}
