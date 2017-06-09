@@ -4,7 +4,7 @@ title:  "HK enjoys its first Big Data and AI Day"
 date:   2017-05-27 09:40:02 +0700
 categories: jekyll update
 thum: "/imgs/2017-5-27/img1.webp"
-description: "The Big Data Institute of the Hong Kong University of Science and Technology (HKUST) hosted the first Big Data and AI Day on Friday. It invited academics and industry experts from Hong Kong and overseas to share their insights into the future of this important field.The event attracted more than 500 guests. They included local and overseas academics, leaders in big data and artificial intelligence (AI)-related industries, and students."
+description: "The Big Data Institute of the Hong Kong University of Science and Technology (HKUST) hosted the first Big Data and AI Day on Friday. It invited academics and industry experts from Hong Kong and overseas to share their insights into the future of this important field.The event attracted more than 500 guests. They included local and overseas academics, leaders in big data and artificial intelligence (AI)-related industries, and students.Tan Tieniu, deputy director of the Liaison Office of the Central People’s Government in the Hong Kong Special Administrative Region, gave a keynote address about big visual data analysis. Tan said: “Hong Kong is a great place for big data and AI, and big data and AI are a great hope for Hong Kong making the place smarter and stronger.”"
 
 ---
 <center>
