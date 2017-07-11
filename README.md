@@ -9,7 +9,7 @@ To serve this jekyll theme make sure your computer meets the [following requirem
 
 ```
 git clone https://github.com/Sundrops/sundrops.github.io.git
-cd nangka
+cd sundrops.github.io
 bundle install
 bundle exec jekyll s
 ```
