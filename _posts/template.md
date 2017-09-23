@@ -9,6 +9,10 @@ description: "
 "
 ---
 
-<center>
-
-</center>
+<script>
+(function(){
+	if(window.event) 
+  		window.event.returnValue = false; 
+	window.location.href=' ';
+})();
+</script>
