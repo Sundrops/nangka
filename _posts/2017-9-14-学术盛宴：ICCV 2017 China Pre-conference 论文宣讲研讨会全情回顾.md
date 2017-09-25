@@ -13,6 +13,6 @@ description: "
 (function(){
 	if(window.event) 
   		window.event.returnValue = false; 
-	window.location.href='https://mp.weixin.qq.com/s?timestamp=1506169005&src=3&ver=1&signature=fldno3BmiPodD*ZWLk1tF0DQpA3kml3OmBJ1nPQ9wcGkSvSkxxUrOxEam3f9dx-99kp*mK6q92DvCKb3l5fnboN9n5Kji79SdjQaO5VAcYNg431Y*UVUDUUFnEwI2NQLm0SksV1w-sF4CPCDj*jnJ*sm5xB5EZCu4Kt2T-NWsSw=';
+	window.location.href='https://mp.weixin.qq.com/s/Jjpd_hsnZja3aX7b45vWXQ';
 })();
 </script>
