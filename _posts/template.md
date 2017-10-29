@@ -11,8 +11,8 @@ description: "
 
 <script>
 (function(){
-	if(window.event) 
-  		window.event.returnValue = false; 
-	window.location.href=' ';
+	if(window.event)
+  		window.event.returnValue = false;
+	window.location.href='';
 })();
 </script>

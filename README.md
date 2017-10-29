@@ -3,6 +3,10 @@
 - _pages contains some tabs
 - _posts contains all news. you can post latest news here.
 
+### 上传新的新闻
+- 从CSIG公众号上获得新闻，拷贝link
+- 在_posts中复制一份template.md，按时间-标题修改文件名
+- 修改文件中的标题日期，缩略图，摘要，然后将刚刚拷贝的link放到href中
 
 ### Run this theme on your local machine
 To serve this jekyll theme make sure your computer meets the [following requirements](https://jekyllrb.com/docs/installation/#requirements), then run this command.
@@ -10,6 +14,8 @@ To serve this jekyll theme make sure your computer meets the [following requirem
 ```
 git clone https://github.com/Sundrops/sundrops.github.io.git
 cd sundrops.github.io
+sudo apt-get install ruby-full rubygems
+sudo gem install bundler
 bundle install
 bundle exec jekyll s
 ```
