@@ -14,21 +14,21 @@ layout: default
     {% assign flag = true %}
     {% for post in site.posts limit:3%}
       {% if flag == false %}
-      
+
         <div class="item">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="view_window">
             <img src="{{ post.thum }}" style="width:100%;height: 450px" > <!-- height:auto -->
             <div class="carousel-caption">
               <h3>{{ post.title }}</h3>
             </div>
           </a>
         </div>
-        
+
       {% endif %}
       {% if flag == true %}
         {% assign flag = false %}
         <div class="item active">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="view_window">
             <img src="{{ post.thum }}" style="width:100%;height: 450px" >
             <div class="carousel-caption">
               <h3>{{ post.title }}</h3>
